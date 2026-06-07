@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,387 +10,388 @@
 </head>
 
 <script>
-function toggleMenu() {
+    function toggleMenu() {
 
-    const menu = document.getElementById("navLinks");
-    const btn = document.querySelector(".menu-toggle");
+        const menu = document.getElementById("navLinks");
+        const btn = document.querySelector(".menu-toggle");
 
-    menu.classList.toggle("show");
+        menu.classList.toggle("show");
 
-    if(menu.classList.contains("show")){
-        btn.innerHTML = "✕";
-    }else{
-        btn.innerHTML = "☰";
+        if (menu.classList.contains("show")) {
+            btn.innerHTML = "✕";
+        } else {
+            btn.innerHTML = "☰";
+        }
     }
-}
 </script>
+
 <body>
 
-<section class="hero-section">
+    <section class="hero-section">
 
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-container">
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-container">
 
-    <a class="logo" href="#">
-        <img src="assets/imgs/logo.png" alt="HomePro Logo">
-        <span>HomePro</span>
-    </a>
+                <a class="logo" href="#">
+                    <img src="assets/imgs/logo.png" alt="HomePro Logo">
+                    <span>HomePro</span>
+                </a>
 
-    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-    <ul class="nav-links" id="navLinks">
-        <li class="menu-header">
-        <a class="logo" href="#">
-            <img src="assets/imgs/logo.png" alt="HomePro Logo">
-            <span>HomePro</span>
-        </a>
+                <ul class="nav-links" id="navLinks">
+                    <li class="menu-header">
+                        <a class="logo" href="#">
+                            <img src="assets/imgs/logo.png" alt="HomePro Logo">
+                            <span>HomePro</span>
+                        </a>
 
-        <button class="close-menu" onclick="toggleMenu()">✕</button>
-    </li>
-       
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Our Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="mobile-status">🔴 24 Hour Services</li>
-    </ul>
+                        <button class="close-menu" onclick="toggleMenu()">✕</button>
+                    </li>
 
-    <div class="status">
-        🔴 24 Hour Services
-    </div>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="mobile-status">🔴 24 Hour Services</li>
+                </ul>
 
-</div>
-    </nav>
+                <div class="status">
+                    🔴 24 Hour Services
+                </div>
 
-    <!-- Hero -->
-    <div class="hero-container">
+            </div>
+        </nav>
 
-        <!-- Side Images + Content Layout -->
-        <div class="hero-grid">
+        <!-- Hero -->
+        <div class="hero-container">
 
-            <!-- Left -->
-            <div class="side-image left">
-                <img src="assets/imgs/LeftImage.png" alt="Worker">
+            <!-- Side Images + Content Layout -->
+            <div class="hero-grid">
+
+                <!-- Left -->
+                <div class="side-image left">
+                    <img src="assets/imgs/LeftImage.png" alt="Worker">
+                </div>
+
+                <!-- Center -->
+                <div class="hero-content">
+
+                    <p class="small-text">
+                        Maintenances • Repairs • Improvements
+                    </p>
+
+                    <h1>
+                        Need improvement <br>
+                        or repair your home? <br>
+                        we can help!
+                    </h1>
+
+                    <div class="features">
+                        <span>✓ Free Quotes</span>
+                        <span>✓ 100% Commitment-Free</span>
+                    </div>
+
+                    <button class="call-btn">Call Us Now ☎</button>
+
+                    <!-- Bottom Features -->
+                    <div class="bottom-features">
+
+                        <div class="item">
+                            <img src="assets/imgs/satstification guidness logo.png">
+                            <span>Satisfaction Guarantee</span>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/imgs/AvailablityLogo.png">
+                            <span>24H Availability</span>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/imgs/LocalUS.png">
+                            <span>Local Professional</span>
+                        </div>
+
+                        <div class="item">
+                            <img src="assets/imgs/Flexible.png">
+                            <span>Flexible Appointments</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Right -->
+                <div class="side-image right">
+                    <img src="assets/imgs/RightImage.png" alt="Plumber">
+                </div>
+
             </div>
 
-            <!-- Center -->
-            <div class="hero-content">
+        </div>
 
-                <p class="small-text">
-                    Maintenances • Repairs • Improvements
+    </section>
+
+    <section class="services-section">
+
+        <div class="services-container">
+
+            <!-- Left Side -->
+            <div class="services-content">
+
+                <h3>Professional for your home services</h3>
+
+                <p class="services-text">
+                    You need help for home care? We are home care professionals
+                    focused in the US region. We provide several services that
+                    support home services.
                 </p>
 
-                <h1>
-                    Need improvement <br>
-                    or repair your home? <br>
-                    we can help!
-                </h1>
+                <div class="services-list">
 
-                <div class="features">
-                    <span>✓ Free Quotes</span>
-                    <span>✓ 100% Commitment-Free</span>
+                    <div>✓ Repair and Installation</div>
+                    <div>✓ Plumbing</div>
+
+                    <div>✓ Maintenance</div>
+                    <div>✓ Budget-friendly</div>
+
+                    <div>✓ Home Security Services</div>
+                    <div>✓ Eco-friendly solutions</div>
+
                 </div>
 
-                <button class="call-btn">Call Us Now ☎</button>
-
-                <!-- Bottom Features -->
-                <div class="bottom-features">
-
-                    <div class="item">
-                        <img src="assets/imgs/satstification guidness logo.png">
-                        <span>Satisfaction Guarantee</span>
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/imgs/AvailablityLogo.png">
-                        <span>24H Availability</span>
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/imgs/LocalUS.png">
-                        <span>Local Professional</span>
-                    </div>
-
-                    <div class="item">
-                        <img src="assets/imgs/Flexible.png">
-                        <span>Flexible Appointments</span>
-                    </div>
-
+                <div class="contact-box">
+                    We already 24 hours fast services to help you.<br>
+                    You can contact us at <strong>(888) 617-5894</strong>
                 </div>
 
             </div>
 
-            <!-- Right -->
-            <div class="side-image right">
-                <img src="assets/imgs/RightImage.png" alt="Plumber">
+            <!-- Right Side -->
+            <div class="services-image">
+
+                <div class="image-shape">
+                    <img src="assets/imgs/about-workers.png" alt="Workers">
+                </div>
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section >
+    <section class="services">
 
-<section class="services-section">
-
-    <div class="services-container">
-
-        <!-- Left Side -->
-        <div class="services-content">
-
-            <h3>Professional for your home services</h3>
-
-            <p class="services-text">
-                You need help for home care? We are home care professionals
-                focused in the US region. We provide several services that
-                support home services.
-            </p>
-
-            <div class="services-list">
-
-                <div>✓ Repair and Installation</div>
-                <div>✓ Plumbing</div>
-
-                <div>✓ Maintenance</div>
-                <div>✓ Budget-friendly</div>
-
-                <div>✓ Home Security Services</div>
-                <div>✓ Eco-friendly solutions</div>
-
-            </div>
-
-            <div class="contact-box">
-                We already 24 hours fast services to help you.<br>
-                You can contact us at <strong>(888) 617-5894</strong>
-            </div>
-
-        </div>
-
-        <!-- Right Side -->
-        <div class="services-image">
-
-            <div class="image-shape">
-                <img src="assets/imgs/about-workers.png" alt="Workers">
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<section class="services">
-
-    <div class="services-header">
-        <h3>Our Services</h3>
-
-        <p>
-            You have problems with leaking pipes, broken tiles, lost keys or
-            want to tidy up the trees around you, of course you need our help!
-        </p>
-    </div>
-
-    <div class="services-grid">
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/plumbing services.png" alt="logo">
-            </div>
-            <h5>Plumbing services</h5>
-            <p>Drain pipe leaking, pipe clogged, replace the pipe line.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/roafing repair.png" alt="roaf logo">
-            </div>
-            <h5>Roofing repair</h5>
-            <p>Roof leaks, tile replacement, roof cleaning and maintenance.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/Mold removal.png" alt="Mold Logo">
-            </div>
-            <h5>Mold Removal</h5>
-            <p>Removing and cleaning mildew, Restoration and Prevention.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/tree trimming.png" alt="tree logo">
-             </div>
-            <h5>Tree Trimming</h5>
-            <p>Trimming and cleaning, Deadwood removal, Tree shaping.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/repair.png" alt="repair logo">
-            </div>
-            <h5>Appliance Repair</h5>
-            <p>repair of washing machines, refrigerators, Air conditioner, etc.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/bathroom.png" alt="bathroom logo">
-            </div>
-            <h5>Bathroom Remodeling</h5>
-            <p>Design and Consulting, installation, Repairing, tile repair.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="service-icon">
-                <img src="assets/imgs/locksmith.png" alt="lock logo">
-            </div>
-            <h5>Locksmith</h5>
-            <p>Lock Installation and Repair, Duplication, Lock Rekeying.</p>
-        </div>
-
-        <div class="service-cta">
-            <h5>More service?</h5>
+        <div class="services-header">
+            <h3>Our Services</h3>
 
             <p>
-                You can tell us what you need and we can help!
+                You have problems with leaking pipes, broken tiles, lost keys or
+                want to tidy up the trees around you, of course you need our help!
+            </p>
+        </div>
+
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/plumbing services.png" alt="logo">
+                </div>
+                <h5>Plumbing services</h5>
+                <p>Drain pipe leaking, pipe clogged, replace the pipe line.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/roafing repair.png" alt="roaf logo">
+                </div>
+                <h5>Roofing repair</h5>
+                <p>Roof leaks, tile replacement, roof cleaning and maintenance.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/Mold removal.png" alt="Mold Logo">
+                </div>
+                <h5>Mold Removal</h5>
+                <p>Removing and cleaning mildew, Restoration and Prevention.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/tree trimming.png" alt="tree logo">
+                </div>
+                <h5>Tree Trimming</h5>
+                <p>Trimming and cleaning, Deadwood removal, Tree shaping.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/repair.png" alt="repair logo">
+                </div>
+                <h5>Appliance Repair</h5>
+                <p>repair of washing machines, refrigerators, Air conditioner, etc.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/bathroom.png" alt="bathroom logo">
+                </div>
+                <h5>Bathroom Remodeling</h5>
+                <p>Design and Consulting, installation, Repairing, tile repair.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="assets/imgs/locksmith.png" alt="lock logo">
+                </div>
+                <h5>Locksmith</h5>
+                <p>Lock Installation and Repair, Duplication, Lock Rekeying.</p>
+            </div>
+
+            <div class="service-cta">
+                <h5>More service?</h5>
+
+                <p>
+                    You can tell us what you need and we can help!
+                </p>
+
+                <button>Call Us Now</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="guarantee-section">
+
+        <div class="guarantee-header">
+
+            <h3>
+                Fast, Friendly, and
+                Satisfaction Guarantee
+            </h3>
+
+            <p>
+                No matter how big or small your work is, whether it's for the
+                interior or exterior of your home, we are ready to serve and
+                help you solve your home problems.
             </p>
 
-            <button>Call Us Now</button>
         </div>
 
-    </div>
+        <div class="divider"></div>
 
-</section>
+        <div class="guarantee-grid">
 
-<section class="guarantee-section">
-
-    <div class="guarantee-header">
-
-        <h3>
-            Fast, Friendly, and
-            Satisfaction Guarantee
-        </h3>
-
-        <p>
-            No matter how big or small your work is, whether it's for the
-            interior or exterior of your home, we are ready to serve and
-            help you solve your home problems.
-        </p>
-
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="guarantee-grid">
-
-        <div class="guarantee-item">
-            <img src="assets/imgs/Ic_Guarantee-Filled.png" alt="Gurentee Logo">
-            <div>
-                <h5>Satisfaction Guarantee</h5>
-                <p>
-                    You don't need to worry about scams or our performance
-                    results. Our company has been verified and strives for
-                    optimal results.
-                </p>
+            <div class="guarantee-item">
+                <img src="assets/imgs/Ic_Guarantee-Filled.png" alt="Gurentee Logo">
+                <div>
+                    <h5>Satisfaction Guarantee</h5>
+                    <p>
+                        You don't need to worry about scams or our performance
+                        results. Our company has been verified and strives for
+                        optimal results.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="guarantee-item">
-            <img src="assets/imgs/Ic_Quotes-Filled.png" alt="Quotes Logo">
-            <div>
-                <h5>Free Quotes</h5>
-                <p>
-                    Get personalized cost estimates without any obligation.
-                    Experience transparency and peace of mind.
-                </p>
+            <div class="guarantee-item">
+                <img src="assets/imgs/Ic_Quotes-Filled.png" alt="Quotes Logo">
+                <div>
+                    <h5>Free Quotes</h5>
+                    <p>
+                        Get personalized cost estimates without any obligation.
+                        Experience transparency and peace of mind.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="guarantee-item">
-            <img src="assets/imgs/Ic_Local-Filled.png" alt="Local Logo">
-            <div>
-                <h5>Local Professionals</h5>
-                <p>
-                    Our services cover the nationwide area including urban,
-                    suburban and rural locations.
-                </p>
+            <div class="guarantee-item">
+                <img src="assets/imgs/Ic_Local-Filled.png" alt="Local Logo">
+                <div>
+                    <h5>Local Professionals</h5>
+                    <p>
+                        Our services cover the nationwide area including urban,
+                        suburban and rural locations.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="guarantee-item">
-            <img src="assets/imgs/Ic_24H-Filled.png" alt="Time Logo">
-            <div>
-                <h5>Fast 24-Hour Service</h5>
-                <p>
-                    Need fast handling for repairs or leaks?
-                    Our experts are available anytime.
-                </p>
+            <div class="guarantee-item">
+                <img src="assets/imgs/Ic_24H-Filled.png" alt="Time Logo">
+                <div>
+                    <h5>Fast 24-Hour Service</h5>
+                    <p>
+                        Need fast handling for repairs or leaks?
+                        Our experts are available anytime.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="guarantee-item">
-            <img src="assets/imgs/Ic_Calendar-Filled.png" alt="Calander Logo">
-            <div>
-                <h5>Flexible Appointments</h5>
-                <p>
-                    We offer convenient appointment times that can
-                    accommodate your busy schedule.
-                </p>
+            <div class="guarantee-item">
+                <img src="assets/imgs/Ic_Calendar-Filled.png" alt="Calander Logo">
+                <div>
+                    <h5>Flexible Appointments</h5>
+                    <p>
+                        We offer convenient appointment times that can
+                        accommodate your busy schedule.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="guarantee-item">
-            <img src="assets/imgs/Ic_Commitment-Filled.png" alt="Commitment Logo">
-            <div>
-                <h5>100% Commitment-Free</h5>
-                <p>
-                    You are free to ask us about the problems you are facing.
-                    No commitment required.
-                </p>
+            <div class="guarantee-item">
+                <img src="assets/imgs/Ic_Commitment-Filled.png" alt="Commitment Logo">
+                <div>
+                    <h5>100% Commitment-Free</h5>
+                    <p>
+                        You are free to ask us about the problems you are facing.
+                        No commitment required.
+                    </p>
+                </div>
             </div>
+
         </div>
 
-    </div>
-
-</section>
+    </section>
 
     <section class="how-section">
 
-    <div class="how-container">
+        <div class="how-container">
 
-        <!-- Left Image -->
-        <div class="how-image">
+            <!-- Left Image -->
+            <div class="how-image">
 
-            <img src="assets/imgs/anotherworker.png" alt="Worker">
+                <img src="assets/imgs/anotherworker.png" alt="Worker">
 
 
-        </div>
+            </div>
 
-        <!-- Right Content -->
-        <div class="how-content">
+            <!-- Right Content -->
+            <div class="how-content">
 
-            <h3>How HomePro works?</h3>
+                <h3>How HomePro works?</h3>
 
-            <div class="step">
+                <div class="step">
 
-    <div class="step-number">1.</div>
+                    <div class="step-number">1.</div>
 
-    <h5>Call us anytime 24/7</h5>
+                    <h5>Call us anytime 24/7</h5>
 
-    <p>
-        You can contact us directly, we will quickly put
-        you in touch with our home care professionals who
-        are ready anytime.
-    </p>
+                    <p>
+                        You can contact us directly, we will quickly put
+                        you in touch with our home care professionals who
+                        are ready anytime.
+                    </p>
 
-</div>
+                </div>
 
-            <div class="step">
+                <div class="step">
 
-                <div class="step-number">2.</div>
+                    <div class="step-number">2.</div>
 
-                
+
                     <h5>Schedule Service</h5>
 
                     <p>
@@ -397,15 +399,15 @@ function toggleMenu() {
                         will answer your questions and provide flexible
                         appointment times.
                     </p>
-               
 
-            </div>
 
-            <div class="step">
+                </div>
 
-                <div class="step-number">3.</div>
+                <div class="step">
 
-               
+                    <div class="step-number">3.</div>
+
+
                     <h5>Your request is completed</h5>
 
                     <p>
@@ -413,60 +415,63 @@ function toggleMenu() {
                         the problem and provide an estimate. If you
                         decide to continue, the technician will get to work.
                     </p>
-               
 
-            </div>
 
-        </div>
-
-    </div>
-
-</section>
-
-<section class="reviews-section">
-
-    <div class="reviews-container">
-
-        <h3>
-            Here our original reviews<br>
-            from trusted platform
-        </h3>
-
-        <div class="review-card">
-
-            <div class="review-platform">
-                <img src="assets/imgs/review-logo.png" alt="Trustpilot">
-            </div>
-
-            <div class="review-divider"></div>
-
-            <p class="review-text">
-                Roof repairs can be a real headache, but HomePro makes it easy!
-                Their roofing team turned my leaky roof into a stockade.
-                With their craftsmanship and the best materials, my house
-                is now ready to weather any storm.
-            </p>
-
-            <div class="review-user">
-
-                <img src="assets/imgs/reviewr.png" alt="Reviewer">
-
-                <div>
-                    <h5>Kende Attila</h5>
-
-                    <div class="stars">
-                    <img src="assets/imgs/Rate.png" alt="4 Star Rating">
-                    </div>
                 </div>
 
             </div>
 
         </div>
 
-        <div class="review-navigation">
+    </section>
 
-            <button class="nav-btn prev">←</button>
+    <section class="reviews-section">
 
+        <div class="reviews-container">
+
+            <h3>
+                Here our original reviews<br>
+                from trusted platform
+            </h3>
+
+            <div class="review-card">
+
+                <div class="review-platform">
+                    <img src="assets/imgs/review-logo.png" alt="Trustpilot">
+                </div>
+
+                <div class="review-divider"></div>
+
+                <p class="review-text">
+                    Roof repairs can be a real headache, but HomePro makes it easy!
+                    Their roofing team turned my leaky roof into a stockade.
+                    With their craftsmanship and the best materials, my house
+                    is now ready to weather any storm.
+                </p>
+
+                <div class="review-user">
+
+                    <img src="assets/imgs/reviewr.png" alt="Reviewer">
+
+                    <div>
+                        <h5>Kende Attila</h5>
+
+                        <div class="stars">
+                            <img src="assets/imgs/Rate.png" alt="4 Star Rating">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="review-navigation">
+
+                <button class="nav-btn prev">←</button>
+                <button class="nav-btn next">→</button>
+
+
+            </div>
             <div class="review-dots">
                 <span class="active"></span>
                 <span></span>
@@ -474,266 +479,264 @@ function toggleMenu() {
                 <span></span>
             </div>
 
-            <button class="nav-btn next">→</button>
+
+
 
         </div>
 
-    </div>
+    </section>
+    <section class="blog-section">
 
-</section>
-<section class="blog-section">
-
-    <div class="blog-header">
-        <h3>Explore Insights in Our Blog</h3>
-
-        <p>
-            Find lots of insights and information on our blog.
-            Explore, learn, and get inspired today.
-        </p>
-    </div>
-
-    <div class="blog-grid">
-
-        <div class="blog-card">
-            <img src="assets/imgs/Phone.png" alt="Blog 1">
-
-            <span class="blog-date">19 Jan 2023</span>
-
-            <h4>Understanding Smart Home Systems & Maintenance</h4>
+        <div class="blog-header">
+            <h3>Explore Insights in Our Blog</h3>
 
             <p>
-                Discover the ultimate guide to troubleshooting common smart
-                home issues in our latest blog post.
+                Find lots of insights and information on our blog.
+                Explore, learn, and get inspired today.
             </p>
+        </div>
 
-            <div class="blog-tags">
-                <span>Plumbing</span>
-                <span>Architecture</span>
-                <span>Maintenance</span>
+        <div class="blog-grid">
+
+            <div class="blog-card">
+                <img src="assets/imgs/Phone.png" alt="Blog 1">
+
+                <span class="blog-date">19 Jan 2023</span>
+
+                <h4>Understanding Smart Home Systems & Maintenance</h4>
+
+                <p>
+                    Discover the ultimate guide to troubleshooting common smart
+                    home issues in our latest blog post.
+                </p>
+
+                <div class="blog-tags">
+                    <span>Plumbing</span>
+                    <span>Architecture</span>
+                    <span>Maintenance</span>
+                </div>
             </div>
-        </div>
 
-        <div class="blog-card">
-            <img src="assets/imgs/blog-thumbnail-02.png" alt="Blog 2">
+            <div class="blog-card">
+                <img src="assets/imgs/blog-thumbnail-02.png" alt="Blog 2">
 
-            <span class="blog-date">19 Jan 2023</span>
+                <span class="blog-date">19 Jan 2023</span>
 
-            <h4>The Ultimate Guide to Home Repairs and Renovations</h4>
+                <h4>The Ultimate Guide to Home Repairs and Renovations</h4>
 
-            <p>
-                Discover the ultimate guide to troubleshooting common smart
-                home issues in our latest blog post.
-            </p>
+                <p>
+                    Discover the ultimate guide to troubleshooting common smart
+                    home issues in our latest blog post.
+                </p>
 
-            <div class="blog-tags">
-                <span>Plumbing</span>
-                <span>Architecture</span>
-                <span>Maintenance</span>
+                <div class="blog-tags">
+                    <span>Plumbing</span>
+                    <span>Architecture</span>
+                    <span>Maintenance</span>
+                </div>
             </div>
-        </div>
 
-        <div class="blog-card">
-            <img src="assets/imgs/blog-thumbnail-03.png" alt="Blog 3">
+            <div class="blog-card">
+                <img src="assets/imgs/blog-thumbnail-03.png" alt="Blog 3">
 
-            <span class="blog-date">19 Jan 2023</span>
+                <span class="blog-date">19 Jan 2023</span>
 
-            <h5>Painting Techniques for a Kitchen Refresh</h5>
+                <h5>Painting Techniques for a Kitchen Refresh</h5>
 
-            <p>
-                Discover the ultimate guide to troubleshooting common smart
-                home issues in our latest blog post.
-            </p>
+                <p>
+                    Discover the ultimate guide to troubleshooting common smart
+                    home issues in our latest blog post.
+                </p>
 
-            <div class="blog-tags">
-                <span>Plumbing</span>
-                <span>Architecture</span>
-                <span>Maintenance</span>
+                <div class="blog-tags">
+                    <span>Plumbing</span>
+                    <span>Architecture</span>
+                    <span>Maintenance</span>
+                </div>
             </div>
-        </div>
-
-    </div>
-
-    <div class="view-more">
-        <a href="#">View More →</a>
-    </div>
-
- 
-
-
-</section>
-
-<section class="FAQsection">
-
-    <div class="FAQ-container">
-
-        <!-- Left Side -->
-        <div class="FAQ-content">
-
-            <h3>Frequently Asked Questions</h3>
-
-            <p>
-                Still need help?
-                <a href="#">Get Help Now</a>
-            </p>
 
         </div>
 
-        <!-- Right Side -->
-        <div class="FAQ-list">
+        <div class="view-more">
+            <a href="#">View More →</a>
+        </div>
 
-            <div class="FAQ-item active">
 
-                <div class="FAQ-question">
-                    <h5>What is HomePro?</h5>
-                    <span>⌃</span>
+
+
+    </section>
+
+    <section class="FAQsection">
+
+        <div class="FAQ-container">
+
+            <!-- Left Side -->
+            <div class="FAQ-content">
+
+                <h3>Frequently Asked Questions</h3>
+
+                <p>
+                    Still need help?
+                    <a href="#">Get Help Now</a>
+                </p>
+
+            </div>
+
+            <!-- Right Side -->
+            <div class="FAQ-list">
+
+                <div class="FAQ-item active">
+
+                    <div class="FAQ-question">
+                        <h5>What is HomePro?</h5>
+                        <span>⌃</span>
+                    </div>
+
+                    <div class="FAQ-answer">
+                        <p>
+                            HomePro is a home care platform that connects homeowners
+                            with professional service providers offering a wide range
+                            of home services, including repairs, maintenance,
+                            cleaning, and more.
+                        </p>
+                    </div>
+
                 </div>
 
-                <div class="FAQ-answer">
-                    <p>
-                        HomePro is a home care platform that connects homeowners
-                        with professional service providers offering a wide range
-                        of home services, including repairs, maintenance,
-                        cleaning, and more.
+                <div class="FAQ-item">
+                    <div class="FAQ-question">
+                        <h5>Are the service providers on HomePro reliable and qualified?</h5>
+                        <span>⌄</span>
+                    </div>
+                </div>
+
+                <div class="FAQ-item">
+                    <div class="FAQ-question">
+                        <h5>What if I have an issue or complaint about a service provider?</h5>
+                        <span>⌄</span>
+                    </div>
+                </div>
+
+                <div class="FAQ-item">
+                    <div class="FAQ-question">
+                        <h5>How are payments handled on HomePro?</h5>
+                        <span>⌄</span>
+                    </div>
+                </div>
+
+                <div class="FAQ-item">
+                    <div class="FAQ-question">
+                        <h5>How do I leave a review for a service provider?</h5>
+                        <span>⌄</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="ready-section">
+        <div class="ready-container">
+            <div class="ready-content">
+                <div class="h2-part">
+                    <h2>
+                        Already to improve
+                        or repair your home?
+                        Let's Talk!
+                    </h2>
+                </div>
+                <div class="add-features">
+                    <span>✓ Free Quotes</span>
+                    <span>✓ 100% Commitment-Free</span>
+                </div>
+                <button class="btn-call">
+
+                    Call Us Now
+                    <img src="assets/imgs/PhoneLogo.png" alt="phone Logo">
+                </button>
+
+            </div>
+            <div class="ready-image">
+                <img src="assets/imgs/banner.png" alt="worker1">
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="thefooter-section">
+        <div class="container">
+            <div class="newsletter-box">
+
+
+                <div class="newletter-contentpart">
+
+                    <h5>Stay Connected with Our Newsletter</h5>
+                    <p>Subscribe to our newsletter to get more news,
+                        promo, or news services
                     </p>
                 </div>
 
-            </div>
+                <div class="newletter-formpart">
 
-            <div class="FAQ-item">
-                <div class="FAQ-question">
-                    <h5>Are the service providers on HomePro reliable and qualified?</h5>
-                    <span>⌄</span>
+                    <input type="email" placeholder="Enter your email address">
+
+
+                    <button type="submit">
+                        Subscribe
+                    </button>
                 </div>
             </div>
+            <div class="main-part">
+                <div class="brand-footer">
 
-            <div class="FAQ-item">
-                <div class="FAQ-question">
-                    <h5>What if I have an issue or complaint about a service provider?</h5>
-                    <span>⌄</span>
+                    <div class="logo-footer">
+
+                        <img src="assets/imgs/logolast.png" alt="Home Logo">
+
+                        <span>HomePro</span>
+
+                    </div>
+                    <p>
+                        Home Pro is your premier destination for
+                        top-notch smart home service and repair.
+                    </p>
+
+                    <div class="socialmedia-icons">
+                        <img src="assets/imgs/youtube.png" alt="youtube">
+                        <img src="assets/imgs/instagram.png" alt="instagram">
+                        <img src="assets/imgs/facebook.png" alt="facebook">
+                        <img src="assets/imgs/twitter.png" alt="twitter">
+                        <img src="assets/imgs/mail.png" alt="mail">
+                    </div>
+                </div>
+
+                <div class="footerlinks">
+                    <h5>Company</h5>
+                    <a href="#">About us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Our Blog</a>
+                    <a href="#">Contact</a>
+
+                    <h5>legal</h5>
+                    <a href="#">Terms</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Cookies</a>
+                    <a href="#">License</a>
                 </div>
             </div>
+            <div class="footerbottom">
+                <p>©2023 HomePro . All rights reserved</p>
 
-            <div class="FAQ-item">
-                <div class="FAQ-question">
-                    <h5>How are payments handled on HomePro?</h5>
-                    <span>⌄</span>
-                </div>
-            </div>
-
-            <div class="FAQ-item">
-                <div class="FAQ-question">
-                    <h5>How do I leave a review for a service provider?</h5>
-                    <span>⌄</span>
-                </div>
             </div>
 
         </div>
-
-    </div>
-
-</section>
-
-
-<section class="ready-section">
-    <div class="ready-container">
-        <div class="ready-content">
-            <div class="h2-part">
-            <h2>
-                Already to improve
-                or repair your home?
-                Let's Talk!
-            </h2>
-            </div>
-            <div class="add-features">
-                <span>✓ Free Quotes</span>
-                <span>✓ 100% Commitment-Free</span>
-            </div>
-            <button class="btn-call">
-                
-                Call Us Now
-                <img src="assets/imgs/PhoneLogo.png" alt="phone Logo">
-            </button>
-
-        </div>
-        <div class="ready-image">
-            <img src="assets/imgs/banner.png" alt="worker1">
-
-        </div>
-    </div>
-
-
-</section>
-
-<footer class="thefooter-section">
-    <div class="container">
-        <div class="newsletter-box">
-
-        
-            <div class="newletter-contentpart">
-
-                <h5>Stay Connected with Our Newsletter</h5>
-                <p>Subscribe to our newsletter to get more news,
-                    promo, or news services
-                </p>
-            </div>
-        
-            <div class="newletter-formpart">
-
-             <input
-             type="email"
-             placeholder="Enter your email address">
-                                                
-
-             <button type="submit">
-                 Subscribe
-                </button>
-             </div>
-        </div>
-        <div class="main-part">
-            <div class="brand-footer">
-
-                <div class="logo-footer">
-
-                    <img src="assets/imgs/logo.png" alt="Home Logo">
-
-                    <span>HomePro</span>
-
-                </div>
-                <p>
-                    Home Pro is your premier destination for
-                     top-notch smart home service and repair.
-                </p>
-
-                <div class="socialmedia-icons">
-                    <img src="assets/imgs/youtube.png" alt="youtube">
-                    <img src="assets/imgs/instagram.png" alt="instagram">
-                    <img src="assets/imgs/facebook.png" alt="facebook">
-                    <img src="assets/imgs/twitter.png" alt="twitter">
-                    <img src="assets/imgs/mail.png"  alt="mail">
-                </div>
-            </div>
-        
-            <div class="footerlinks">
-                <h5>Company</h5>
-                <a href="#">About us</a>
-                <a href="#">Services</a>
-                <a href="#">Our Blog</a>
-                <a href="#">Contact</a>
-
-                <h5>legal</h5>
-                <a href="#">Terms</a>
-                <a href="#">Privacy</a>
-                <a href="#">Cookies</a>
-                <a href="#">License</a>
-            </div>
-        </div>
-        <div class="footerbottom">
-            <p>©2023 HomePro . All rights reserved</p>
-
-        </div>
-
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
